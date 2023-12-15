@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{categoriaActual.nombre}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>  
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{categoriaActual.nombre}}</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>    
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-card *ngFor="let item of categoriaActual.productos"[routerLink]="['/productos',item.id]">
+    <div class="contenedor"><img alt="{{item.nombre}}" src="{{item.imagen}}" />
+    <ion-card-header class="contenedor-texto">
+      <ion-card-title>{{item.nombre}}</ion-card-title>
+      <ion-card-subtitle>{{item.autor}}</ion-card-subtitle>
+      <ion-card-subtitle>${{item.precio}}</ion-card-subtitle>
+      
+    </ion-card-header>
+ 
+    
+      
+    
+  </div>
+  </ion-card>
+
+
+

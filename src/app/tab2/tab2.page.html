@@ -1,0 +1,33 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-input label="Nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-toggle>
+        <ion-label>Recibir notificaciones</ion-label>
+      </ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-textarea label="Comentarios" labelPlacement="floating" rows="5"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-note color="medium" class="ion-margin-horizontal">
+    Tu comentario se mantendra anonimo y solo lo usaremos para mejorar nuestros productos y servicios.</ion-note>
+</ion-content>

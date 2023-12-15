@@ -1,0 +1,38 @@
+
+img{
+    height: 300px;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+h2 {
+    font-size: medium;
+}
+
+h3{
+    font-size: medium; 
+    text-align: right;
+}
+
+p{
+    font-size: small;
+}
+
+ion-button {
+    background: #201F1F;
+  font-family: Arial;
+  color: #ffffff;
+  border: solid #857b7b 2px;
+  text-decoration: none;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+}
+    
+app-contador-cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}

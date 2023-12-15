@@ -1,0 +1,37 @@
+ion-card-title {
+    font-size: small;
+ text-align: center;
+}
+a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: small;
+}
+ion-button {
+    background: #201F1F;
+  font-size: smaller;
+  color: #ffffff;
+  border: solid #857b7b 2px;
+  text-decoration: none;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+button {
+    color: darkgrey;
+    background-color: white;
+    width: 30px;
+height: 25px;
+
+}
+
+
+   

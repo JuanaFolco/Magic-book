@@ -1,0 +1,16 @@
+img {
+    width: 125px;
+    height: 200px;
+    
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
