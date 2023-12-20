@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Carrito } from '../interface/carrito';
 import { Producto } from '../interface/productos';
+import { UsuarioService } from './usuario.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CarritoService {
 
-  constructor() {
+  constructor(private usuarioService:UsuarioService) {
     const memoria = localStorage.getItem('carrito');
     if(memoria) {
       this.carrito = JSON.parse(memoria);
@@ -74,7 +75,9 @@ export class CarritoService {
     Productos:
     ${parteProductos}
     Total: $${this.totalCarrito}
-    Dirección de envío: DIRECCION DE EJEMPLO`;
+    Nombre: ${this.usuarioService.usuario.nombre}
+    Apellido:${this.usuarioService.usuario.apellido}
+    ;`;
     return encodeURI(primeraParte+ultimaParte);
   }
 
